@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('./fonts/Pixel.ttf');
+}
+
+body {
+    display: flex;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.menu {
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    top: calc(50% - 156px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 312px;
+    background-color: white;
+    box-shadow: 5px 5px 7px black;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin: 20px;
+    text-align: center;
+    line-height: 180%;
+}
+
+[flappy] {
+    position: relative;
+    box-sizing: border-box;
+    border: 5px solid dodgerblue;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.bird {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.pipeSetContainer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pipe .border {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid black;
+}
+
+.pipe .body {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.progress {
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 100;
+}
+
+.dHide {
+    display: none;
+}
